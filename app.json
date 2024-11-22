@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "grafo",
+    "slug": "grafo",
+    "scheme": "grafoapp",
+    "version": "1.0.0",
+    "userInterfaceStyle": "automatic",
+    "sdkVersion": "50.0.0",
+    "jsEngine": "jsc",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "android": {
+      "package": "com.anonymous.grafo",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "grafoapp",
+              "host": "*"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.grafo",
+      "associatedDomains": []
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id"
+      }
+    },
+    "plugins": [
+      "expo-secure-store"
+    ]
+  }
+}
